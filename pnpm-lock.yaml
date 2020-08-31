@@ -19,6 +19,7 @@ dependencies:
   open: 7.2.1
   react: 16.13.1
   react-apollo: 3.1.5_graphql@15.3.0+react@16.13.1
+  react-apollo-hooks: 0.5.0_graphql@15.3.0+react@16.13.1
   react-blessed: 0.6.2_blessed@0.1.81+ws@7.3.1
   react-devtools: 4.8.2
   react-router: 5.2.0_react@16.13.1
@@ -5532,6 +5533,18 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
+  /react-apollo-hooks/0.5.0_graphql@15.3.0+react@16.13.1:
+    dependencies:
+      graphql: 15.3.0
+      lodash: 4.17.20
+      react: 16.13.1
+    dev: false
+    peerDependencies:
+      apollo-client: ^2.6.0
+      graphql: '*'
+      react: ^16.8.0
+    resolution:
+      integrity: sha512-Us5KqFe7/c6vY1NaiyfhnD2Pz4lPLTojQXLppShaBVYU/vYvJrRjmj4MzIPXnExXaSfnQ+K2bWDr4lP4efbsRQ==
   /react-apollo/3.1.5_graphql@15.3.0+react@16.13.1:
     dependencies:
       '@apollo/react-common': 3.1.4_graphql@15.3.0+react@16.13.1
@@ -6954,6 +6967,7 @@ specifiers:
   open: ^7.2.1
   react: ^16.13.1
   react-apollo: ^3.1.5
+  react-apollo-hooks: ^0.5.0
   react-blessed: ^0.6.2
   react-devtools: ^4.8.2
   react-router: ^5.2.0
