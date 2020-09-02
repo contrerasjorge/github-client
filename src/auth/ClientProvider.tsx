@@ -11,7 +11,10 @@ export const ClientProvider: FC<PropsWithChildren<{}>> = ({ children }) => {
 
   useEffect(() => {
     const getToken = async () => {
-      let key: any = await keytar.getPassword('github', process.env.CLIENT_ID!);
+      let key: any = await keytar.getPassword(
+        'github',
+        process.env.GITHUB_CLIENT_ID!
+      );
       if (!key) {
         key = await getCode();
       }
