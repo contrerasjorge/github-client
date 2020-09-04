@@ -2,16 +2,10 @@ import React from 'react';
 import { gql } from 'apollo-boost';
 import { useQuery } from 'react-apollo-hooks';
 import { Panel } from './Panel';
-
-type UserInfoData = {
-  viewer: {
-    name: string;
-    bio: string;
-  };
-};
+import { getUserInfo } from './types/getUserInfo';
 
 export const WelcomeWindow = () => {
-  const { loading, data } = useQuery<UserInfoData>(GET_USER_INFO, {
+  const { loading, data } = useQuery<getUserInfo>(GET_USER_INFO, {
     notifyOnNetworkStatusChange: true,
     pollInterval: 0,
     fetchPolicy: 'no-cache',
