@@ -1,10 +1,18 @@
 import React from 'react';
-import { Panel } from '../Panel';
+import { Route, Switch, useRouteMatch } from 'react-router';
+import { RepositoriesMain } from './RepositoriesMain';
+import { ListRepositories } from './ListRepositories';
 
-export const Repositories= () => {
+const NewRepository = () => <>NewRepository</>;
+
+export const Repositories = () => {
+  const match = useRouteMatch();
+
   return (
-    <Panel height={10} top="25%" left="center">
-      <blessed-text left="center" bg="white" fg="black" content="Repositories" />
-    </Panel>
+    <Switch>
+      <Route exact path={match.path} component={RepositoriesMain} />
+      <Route path={`${match.path}/new`} component={NewRepository} />
+      <Route path={`${match.path}/list`} component={ListRepositories} />
+    </Switch>
   );
 };
