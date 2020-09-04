@@ -1,6 +1,7 @@
 import React from 'react';
 import { gql } from 'apollo-boost';
 import { useQuery } from 'react-apollo-hooks';
+import { Panel } from './Panel';
 
 type UserInfoData = {
   viewer: {
@@ -20,7 +21,28 @@ export const WelcomeWindow = () => {
     return null;
   }
 
-  return JSON.stringify(data);
+  return (
+    <Panel height={10} top="25%" left="center">
+      <blessed-text
+        left="center"
+        bg="white"
+        fg="black"
+        content="Welcome to Github Manager"
+      />
+      <blessed-text
+        top={3}
+        bg="white"
+        fg="black"
+        content={`Name: ${data?.viewer.name}`}
+      />
+      <blessed-text
+        top={5}
+        bg="white"
+        fg="black"
+        content={`Bio: ${data?.viewer.bio}`}
+      />
+    </Panel>
+  );
 };
 
 const GET_USER_INFO = gql`
