@@ -24,12 +24,12 @@ export const ListRepositories = () => {
   }, [data]);
 
   return (
-    <Panel height={10} top='25%' left='center'>
+    <Panel height={10} top="25%" left="center">
       <blessed-text
-        left='center'
-        bg='white'
-        fg='black'
-        content='List Repositories'
+        left="center"
+        bg="white"
+        fg="black"
+        content="List Repositories"
       />
       <List
         ref={listRef}
