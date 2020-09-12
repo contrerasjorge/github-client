@@ -11,18 +11,18 @@
   "license": "ISC",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
-    "@babel/core": "^7.11.4",
-    "@babel/preset-env": "^7.11.0",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
-    "@babel/register": "^7.10.5",
+    "@babel/register": "^7.11.5",
     "@types/react-blessed": "^0.3.2",
     "@types/react-router": "^5.1.8",
     "apollo": "^2.30.3",
     "apollo-boost": "^0.4.9",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "blessed": "^0.1.81",
-    "cross-fetch": "^3.0.5",
+    "cross-fetch": "^3.0.6",
     "dotenv": "^8.2.0",
     "form-data": "^3.0.0",
     "graphql": "^15.3.0",
@@ -37,7 +37,7 @@
     "ws": "^7.3.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11.5",
+    "@babel/cli": "^7.11.6",
     "@babel/node": "^7.10.5",
     "nodemon": "^2.0.4"
   }
