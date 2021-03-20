@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node --inspect src/index.tsx --extensions \".js,.ts,.jsx,.tsx,\""
+    "start": "babel-node --inspect src/index.tsx --extensions \".js,.ts,.jsx,.tsx,\"",
+    "codegen:schema": "apollo codegen:generate --localSchemaFile=graphql-schema.json --target=typescript --tagName=gql --addTypename --globalTypesFile=src/types/graphql-global-types.ts types"
   },
   "keywords": [],
   "author": "",
